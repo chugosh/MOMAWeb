@@ -1,0 +1,14 @@
+@model MoMaWeb.Models.UserInfo
+<html>
+    <head>
+        <title>创建页面</title>
+        <h1>创建学生</h1>
+    </head>
+    <body>
+        <form method="post" asp-action="Create">
+            <input asp-for="Name" />
+            <input asp-for="Password"/>
+            <button type="submit" name="保存">提交</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,9 @@
+@model IEnumerable<Student>
+@* <h1>共享部分</h1> *@
+        @foreach(var s in Model)
+        {
+            <li>
+                @s.name - @s.age
+                <a asp-action="ShowOne" asp-route-id=@s.id>tag helper Show</a>
+            </li>
+        }
